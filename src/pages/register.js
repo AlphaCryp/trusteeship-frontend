@@ -1,8 +1,12 @@
 import React from 'react';
+import {BgO} from "../components/layouts";
+import RegisterForm from "../components/RegisterForm";
 
 function Register(props) {
   return (
-      <div>Register</div>
+      <BgO>
+        <RegisterForm />
+      </BgO>
   );
 }
 

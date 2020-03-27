@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React from "react";
+import {Link} from "react-router-dom";
 
 export const Head = styled.div`
   position: absolute;
@@ -106,20 +107,49 @@ export const MainFormWrapper = styled.div`
   height: 460px;
   z-index: 2;
   background: #fff;
+  display: flex;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
 `;
 
-const MainForm = props => <MainFormWrapper>
-  {props.children}
-</MainFormWrapper>;
+const Branding = styled.div`
+  background: #ff7023;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+const FormContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+const MainForm = props => (
+  <MainFormWrapper>
+    <Branding>
+      <Link to="/">
+        <img src="logo.png" alt="" />
+      </Link>
+    </Branding>
+    <FormContent>{props.children}</FormContent>
+  </MainFormWrapper>
+);
 
 export const BgO = props => (
   <Bg>
-    <BlockO />
-    <BlockB />
     <GreyHalf />
     <OrangeHalg />
+    <BlockO />
+    <BlockB />
     <MainForm>{props.children}</MainForm>
   </Bg>
 );
 
+export const Title = styled.div`
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgba(45, 45, 45, 1);
+`;
