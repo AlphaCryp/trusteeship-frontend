@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { ClearFloat, Title } from "./layouts";
-import { Button, Checkbox, Form, Select, message } from "antd";
+import {Button, Checkbox, Form, Select, message, Upload} from "antd";
 import {useHistory} from "react-router-dom";
+import UploadOutlined from "@ant-design/icons/lib/icons/UploadOutlined";
 
 const plainOptions = [
   { label: "工商托管", value: 1 },
@@ -44,6 +45,19 @@ function TrusteeshipForm(props) {
     <div>
       <Title>资产托管</Title>
       <Form layout="vertical" colon={false} onFinish={submit}>
+        <Form.Item
+            label="请选择您的私钥"
+            name="privateKey"
+            rules={[
+              { required: true, message: "Please upload your private key!" }
+            ]}
+        >
+          <Upload>
+            <Button>
+              <UploadOutlined /> 请上传私钥
+            </Button>
+          </Upload>
+        </Form.Item>
         <Form.Item
           label="请选择资产托管方"
           name="trustee"

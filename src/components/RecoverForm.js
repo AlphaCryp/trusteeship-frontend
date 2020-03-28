@@ -23,21 +23,21 @@ function RecoverForm(props) {
         autoSize={{ minRows: 10, maxRows: 20 }}
       />
       <HorizonLayout justfyContent="space-between">
-        {/*<Button*/}
-        {/*  type="primary"*/}
-        {/*  style={{ width: "316px", marginTop: 60, background: "#2d2d2d" }}*/}
-        {/*  onClick={onPaste}*/}
-        {/*>*/}
-        {/*  复制签名*/}
-        {/*</Button>*/}
+        <Button
+          type="primary"
+          style={{ width: "316px", marginTop: 60, background: "#2d2d2d" }}
+          onClick={onPaste}
+        >
+          复制签名
+        </Button>
 
-        {/*<Button*/}
-        {/*  htmlType="submit"*/}
-        {/*  type="primary"*/}
-        {/*  style={{ width: "316px", marginTop: 60 }}*/}
-        {/*>*/}
-        {/*  交易上链*/}
-        {/*</Button>*/}
+        <Button
+          htmlType="submit"
+          type="primary"
+          style={{ width: "316px", marginTop: 60 }}
+        >
+          交易上链
+        </Button>
       </HorizonLayout>
     </Form>
   );
