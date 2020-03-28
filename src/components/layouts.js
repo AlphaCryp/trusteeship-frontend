@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import HeaderB from "./HeaderB";
 
 export const Head = styled.div`
   position: absolute;
@@ -82,6 +83,7 @@ export const Slogon = styled.div`
 `;
 export const HorizonLayout = styled.div`
   display: flex;
+  align-items: center;
 `;
 export const MT120 = styled.div`
   margin-top: 60px;
@@ -153,3 +155,50 @@ export const Title = styled.div`
   margin-bottom: 40px;
   color: rgba(45, 45, 45, 1);
 `;
+
+export const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
+
+export const ContentBlock = styled.div`
+  width: 1200px;
+  display: inherit;
+  align-items: inherit;
+  justify-content: space-between;
+`;
+
+export const ContentMain = styled.div`
+  background: #f5f5f5;
+  flex: 1;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
+export const ContentForm = styled.div`
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(209, 209, 209, 1);
+  background: #fff;
+  width: 1200px;
+  flex: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 220px;
+  padding-right: 220px;
+`;
+export const ContentLayout = props => {
+  return (
+    <ContentWrapper>
+      <HeaderB />
+      <ContentMain>
+        <ContentForm>{props.children}</ContentForm>
+      </ContentMain>
+    </ContentWrapper>
+  );
+};
+
+export const ClearFloat = styled.div`
+  clear: both;
+`

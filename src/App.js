@@ -6,6 +6,8 @@ import Index from "./pages";
 import {ConfigProvider} from "antd";
 import zhCN from 'antd/es/locale/zh_CN';
 import 'antd/dist/antd.less';
+import Trusteeship from "./pages/trusteeship";
+import Usage from "./pages/Usage";
 
 export default function App() {
   return (
@@ -17,6 +19,12 @@ export default function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/trusteeship">
+            <Trusteeship />
+          </Route>
+          <Route path="/usage">
+            <Usage />
           </Route>
           <Route path="/">
             <Index />

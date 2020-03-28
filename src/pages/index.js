@@ -53,12 +53,12 @@ function Index(props) {
                 marginRight: 120
               }}
             >
-              资产托管
+              <Link to="/trusteeship">资产托管</Link>
             </Button>
             <Button
               style={{ background: "#FF7023", color: "#fff", width: 200 }}
             >
-              资产使用
+              <Link to="/usage">资产使用</Link>
             </Button>
           </HorizonLayout>
         </MT120>
