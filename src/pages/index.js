@@ -17,16 +17,16 @@ function Index(props) {
   return (
     <Bg>
       <Head>
-        <Link to="/login" style={{ marginRight: 30 }}>
-          登录
-        </Link>
-        |
-        <RBtn>
-          <Link to="/register">注册</Link>
-        </RBtn>
-        <Link to="" style={{ marginRight: 30 }}>
-          退出登录
-        </Link>
+        {/*<Link to="/login" style={{ marginRight: 30 }}>*/}
+        {/*  登录*/}
+        {/*</Link>*/}
+        {/*|*/}
+        {/*<RBtn>*/}
+        {/*  <Link to="/register">注册</Link>*/}
+        {/*</RBtn>*/}
+        {/*<Link to="" style={{ marginRight: 30 }}>*/}
+        {/*  退出登录*/}
+        {/*</Link>*/}
       </Head>
       <BlockO />
       <BlockB />
