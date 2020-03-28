@@ -8,6 +8,7 @@ import zhCN from 'antd/es/locale/zh_CN';
 import 'antd/dist/antd.less';
 import Trusteeship from "./pages/trusteeship";
 import Usage from "./pages/Usage";
+import Recover from "./pages/recover";
 
 export default function App() {
   return (
@@ -25,6 +26,9 @@ export default function App() {
           </Route>
           <Route path="/usage">
             <Usage />
+          </Route>
+          <Route path="/recover">
+            <Recover />
           </Route>
           <Route path="/">
             <Index />

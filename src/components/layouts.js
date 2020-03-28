@@ -84,6 +84,7 @@ export const Slogon = styled.div`
 export const HorizonLayout = styled.div`
   display: flex;
   align-items: center;
+  justify-content: ${props => props.justfyContent};
 `;
 export const MT120 = styled.div`
   margin-top: 60px;
