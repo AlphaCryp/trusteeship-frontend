@@ -1,6 +1,6 @@
 import React from 'react';
 import {ContentLayout} from "../components/layouts";
-import TrusteeshipForm from "../components/trusteeshipForm";
+import TrusteeshipForm from "../components/TrusteeshipForm";
 
 function Trusteeship(props) {
   return (
