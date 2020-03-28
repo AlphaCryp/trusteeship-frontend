@@ -5,7 +5,7 @@ const {
   overrideDevServer
 } = require("customize-cra");
 
-export const target = "http://18.162.36.206:8080";
+const target = "http://18.162.36.206:8080";
 
 const devServerConfig = () => config => {
   return {
@@ -22,6 +22,10 @@ const devServerConfig = () => config => {
         changeOrigin: true
       },
       "/sign": {
+        target,
+        changeOrigin: true
+      },
+      "/verify": {
         target,
         changeOrigin: true
       }

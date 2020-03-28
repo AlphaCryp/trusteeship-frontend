@@ -36,7 +36,7 @@ export default function App() {
           <Route path="/usage">
             <Usage />
           </Route>
-          <Route path="/recover">
+          <Route path="/recover/:sig">
             <Recover />
           </Route>
           <Route path="/">

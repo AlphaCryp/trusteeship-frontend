@@ -78,7 +78,7 @@ function UsageForm(props) {
     });
     message.success('验证成功');
 
-    // history.push("/recover");
+    history.push(`/recover/${res.sig}`);
   }
   return (
     <div>
