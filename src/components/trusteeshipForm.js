@@ -34,7 +34,6 @@ function TrusteeshipForm(props) {
         >
           <Checkbox.Group
             options={plainOptions}
-            defaultValue={["Apple"]}
             onChange={onChange}
           />
         </Form.Item>
